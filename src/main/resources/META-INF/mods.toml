@@ -1,0 +1,33 @@
+# The name of the mod loader type to load - for regular FML @Mod mods it should be javafml
+modLoader="javafml"
+# A version range to match for said mod loader - for regular FML @Mod it will be the forge version
+# Forge for 1.16.5 is version 36
+loaderVersion="[36,)"
+license="MIT"
+
+[[mods]]
+    modId="engineersgear"
+    version="1.0.0.0"
+    displayName="Engineer's Gear"
+    description="Immersive Engineering addon with extra gear"
+
+[[dependencies.engineersgear]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.engineersgear]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.immersiveengineering]]
+    modId="immersiveengineering"
+    mandatory=true
+    versionRange="[1.16.3-4.1.1-127,)"
+    ordering="BEFOR"
+    side="BOTH"
