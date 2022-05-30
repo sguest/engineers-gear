@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "lsl",
+        "sbs",
+        "lsl"
+    ],
+    "key": {
+        "l": {
+            "tag": "forge:gems/lapis"
+        },
+        "s": {
+            "tag": "forge:plates/steel"
+        },
+        "b": {
+            "item": "minecraft:lapis_block"
+        }
+    },
+    "result": {
+        "item": "immersiveengineering:orecutter"
+    }
+}
