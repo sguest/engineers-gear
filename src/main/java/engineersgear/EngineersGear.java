@@ -1,6 +1,7 @@
 package engineersgear;
 
 import engineersgear.common.items.ModItems;
+import engineersgear.common.lootmodifiers.ModLootModifiers;
 import net.minecraftforge.fml.common.Mod;
 
 @Mod(EngineersGear.MODID)
@@ -9,6 +10,7 @@ public class EngineersGear {
 
     public EngineersGear()
     {
-        ModItems.Init();
+        ModItems.init();
+        ModLootModifiers.init();
     }
 }

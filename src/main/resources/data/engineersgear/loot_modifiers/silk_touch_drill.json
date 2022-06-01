@@ -1,0 +1,12 @@
+{
+    "type": "engineersgear:silk_touch_drill",
+    "conditions": [
+        {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+                "item": "immersiveengineering:drill",
+                "nbt": "{upgrades:{silktouch:1b}}"
+            }
+        }
+    ]
+}

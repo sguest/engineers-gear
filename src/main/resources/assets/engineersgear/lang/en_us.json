@@ -1,3 +1,7 @@
 {
-    "item.immersiveengineering.orecutter": "Orecutter Blade"
+    "item.immersiveengineering.orecutter": "Orecutter Blade",
+
+    "item.engineersgear.drill-silk-upgrade": "Precision Rotors",
+
+    "item.engineersgear.drill-silk-upgrade.tooltip": "Allows the Mining Drill to harvest blocks via Silk Touch"
 }

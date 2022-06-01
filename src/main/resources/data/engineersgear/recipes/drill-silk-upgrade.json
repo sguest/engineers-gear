@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ic ",
+        "csc",
+        " cs"
+    ],
+    "key": {
+        "i": {
+            "item": "immersiveengineering:component_iron"
+        },
+        "c": {
+            "tag": "forge:ingots/constantan"
+        },
+        "s": {
+            "tag": "forge:ingots/steel"
+        }
+    },
+    "result": {
+        "item": "engineersgear:drill-silk-upgrade"
+    }
+}
