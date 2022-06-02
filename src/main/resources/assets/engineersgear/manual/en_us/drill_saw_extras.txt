@@ -1,0 +1,5 @@
+Drill and Buzzsaw Extras
+More power for your tools
+<&orecutter_recipe> A cousin of the <link;buzzsaw;Rockcutter Blade;rockcutter_recipe>, the §2Orecutter Blade§r is also intended for use on ores instead of trees. However, this blade will harvest extra ores similar to the §2Fortune§r enchantment.<np>
+<&meatgrinder_recipe> The §2Meatgrinder Blade§r is not intended for use on the environment, but is designed to cut through living (or undead) creatures. It deals more damage than other blades, and will harvest additional resources similar to the §2Looting§r enchantment.<np>
+<&rotors_recipe> The §2Precision Rotors§r are an upgrade to the <link;mining_drill;Mining Drill;start> that allow it to harvest blocks as though enchanted with §2Silktouch§r.

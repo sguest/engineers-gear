@@ -13,14 +13,18 @@ import sguest.engineersgear.EngineersGear;
 @Mod.EventBusSubscriber(modid = EngineersGear.MODID, bus = Bus.MOD)
 public class ModItems {
     public static List<Item> registryItems = new ArrayList<Item>();
+    public static OrecutterItem ORECUTTER;
+    public static MeatgrinderItem MEATGRINDER;
+    public static DrillSilkUpgrade DRILL_SILK_UPGRADE;
+
     public static void init()
     {
         // These extend IE's base item (since Buzzsaw won't accept a blade that's not an instance of SawbladeItem)
         // Therefore they will get registered as IE items. Not ideal, but I'm not sure how else to accomplish this
-        new OrecutterItem("orecutter", 5000, 5f, 9f);
-        new MeatgrinderItem("meatgrinder", 5000, 5f, 13f);
+        ORECUTTER = new OrecutterItem("orecutter", 5000, 5f, 9f);
+        MEATGRINDER = new MeatgrinderItem("meatgrinder", 5000, 5f, 13f);
         
-        new DrillSilkUpgrade("drill-silk-upgrade");
+        DRILL_SILK_UPGRADE = new DrillSilkUpgrade("drill-silk-upgrade");
     }
 
     @SubscribeEvent
