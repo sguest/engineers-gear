@@ -7,7 +7,7 @@
     ],
     "key": {
         "r": {
-            "item": "immersiveengineering:sheetmetal_colored_red"
+            "tag": "forge:dyes/red"
         },
         "s": {
             "tag": "forge:plates/steel"
