@@ -1,4 +1,4 @@
-package engineersgear.common.lootmodifiers;
+package sguest.engineersgear.common.lootmodifiers;
 
 import java.util.List;
 

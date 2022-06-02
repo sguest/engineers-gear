@@ -1,14 +1,14 @@
-package engineersgear.common.items;
+package sguest.engineersgear.common.items;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import engineersgear.EngineersGear;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
+import sguest.engineersgear.EngineersGear;
 
 @Mod.EventBusSubscriber(modid = EngineersGear.MODID, bus = Bus.MOD)
 public class ModItems {

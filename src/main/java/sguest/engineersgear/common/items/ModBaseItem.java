@@ -1,8 +1,8 @@
-package engineersgear.common.items;
+package sguest.engineersgear.common.items;
 
 import blusunrize.immersiveengineering.ImmersiveEngineering;
-import engineersgear.EngineersGear;
 import net.minecraft.item.Item;
+import sguest.engineersgear.EngineersGear;
 
 public class ModBaseItem extends Item {
 

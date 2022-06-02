@@ -1,4 +1,4 @@
-package engineersgear.common.items;
+package sguest.engineersgear.common.items;
 
 import blusunrize.immersiveengineering.common.items.SawbladeItem;
 import net.minecraft.block.material.Material;

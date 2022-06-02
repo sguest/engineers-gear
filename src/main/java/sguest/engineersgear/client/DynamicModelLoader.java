@@ -1,12 +1,12 @@
-package engineersgear.client;
+package sguest.engineersgear.client;
 
-import engineersgear.EngineersGear;
-import engineersgear.common.items.OrecutterItem;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.TextureStitchEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
+import sguest.engineersgear.EngineersGear;
+import sguest.engineersgear.common.items.OrecutterItem;
 
 //Loads models not referenced in any blockstates for rendering in TE(S)Rs
 //Thanks to IE's class of the same name

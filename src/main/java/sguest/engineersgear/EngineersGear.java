@@ -1,8 +1,8 @@
-package engineersgear;
+package sguest.engineersgear;
 
-import engineersgear.common.items.ModItems;
-import engineersgear.common.lootmodifiers.ModLootModifiers;
 import net.minecraftforge.fml.common.Mod;
+import sguest.engineersgear.common.items.ModItems;
+import sguest.engineersgear.common.lootmodifiers.ModLootModifiers;
 
 @Mod(EngineersGear.MODID)
 public class EngineersGear {

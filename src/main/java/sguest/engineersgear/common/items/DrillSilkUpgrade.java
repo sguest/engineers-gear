@@ -1,4 +1,4 @@
-package engineersgear.common.items;
+package sguest.engineersgear.common.items;
 
 import java.util.List;
 import java.util.Set;
