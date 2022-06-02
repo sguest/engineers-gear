@@ -15,9 +15,10 @@ public class ModItems {
     public static List<Item> registryItems = new ArrayList<Item>();
     public static void init()
     {
-        // This extends IE's base item (since Buzzsaw won't accept a blade that's not an instance of SawbladeItem)
-        // Therefore this will get registered as an IE item. Not ideal, but I'm not sure how else to accomplish this
+        // These extend IE's base item (since Buzzsaw won't accept a blade that's not an instance of SawbladeItem)
+        // Therefore they will get registered as IE items. Not ideal, but I'm not sure how else to accomplish this
         new OrecutterItem("orecutter", 5000, 5f, 9f);
+        new MeatgrinderItem("meatgrinder", 5000, 5f, 13f);
         
         new DrillSilkUpgrade("drill-silk-upgrade");
     }

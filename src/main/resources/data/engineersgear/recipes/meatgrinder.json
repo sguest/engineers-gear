@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "rsr",
+        "s s",
+        "rsr"
+    ],
+    "key": {
+        "r": {
+            "item": "immersiveengineering:sheetmetal_colored_red"
+        },
+        "s": {
+            "tag": "forge:plates/steel"
+        }
+    },
+    "result": {
+        "item": "immersiveengineering:meatgrinder"
+    }
+}
