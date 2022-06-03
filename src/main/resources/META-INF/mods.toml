@@ -7,27 +7,29 @@ license="MIT"
 
 [[mods]]
     modId="engineersgear"
-    version="1.0.0.0"
+    version="${version}"
     displayName="Engineer's Gear"
     description="Immersive Engineering addon with extra gear"
+    authors="sguest"
+    credits="The Immersive Engineering team for a great base mod and source of sample code"
 
 [[dependencies.engineersgear]]
     modId="forge"
     mandatory=true
-    versionRange="[36,)"
+    versionRange="[${forge_version},)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.engineersgear]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16.5,1.17)"
+    versionRange="[${mc_version}]"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.immersiveengineering]]
     modId="immersiveengineering"
     mandatory=true
-    versionRange="[1.16.3-4.1.1-127,)"
+    versionRange="[${ie_version}]"
     ordering="BEFOR"
     side="BOTH"

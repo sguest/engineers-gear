@@ -1,3 +1,6 @@
+import groovy.json.JsonOutput
+import groovy.json.JsonSlurper
+
 buildscript {
     repositories {
         maven { url = 'https://maven.minecraftforge.net' }
@@ -12,7 +15,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = "${mod_version}"
+version = "${mc_version}-${mod_version}"
 group = "${author}.${modid}" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "${modid}"
 
@@ -151,13 +154,32 @@ dependencies {
     runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}")
 }
 
+def version_replaces = [
+    'version': project.mod_version,
+    'mc_version': project.mc_version,
+    'forge_version': project.forge_version,
+    'ie_version': "${mc_version}-${ie_version}"
+]
+
+processResources {
+    duplicatesStrategy = DuplicatesStrategy.FAIL
+    filesMatching('META-INF/mods.toml') {
+        expand version_replaces
+    }
+    doLast {
+        fileTree(dir: getOutputs().getFiles().getAsPath(), includes: ['**/*.mcmeta']).each {
+            File file -> file.setText(JsonOutput.toJson(new JsonSlurper().parse(file, 'UTF-8')))
+        }
+    }
+}
+
 // Example for how to get properties into the manifest for reading by the runtime..
 jar {
     manifest {
         attributes([
             "Specification-Title": "${modid}",
             "Specification-Vendor": "${author}",
-            "Specification-Version": "1", // We are version 1 of ourselves
+            "Specification-Version": "${version}",
             "Implementation-Title": project.name,
             "Implementation-Version": "${version}",
             "Implementation-Vendor" :"${author}",
