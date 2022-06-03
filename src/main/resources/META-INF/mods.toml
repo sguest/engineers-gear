@@ -3,6 +3,7 @@ modLoader="javafml"
 # A version range to match for said mod loader - for regular FML @Mod it will be the forge version
 # Forge for 1.16.5 is version 36
 loaderVersion="[36,)"
+issueTrackerURL="https://github.com/sguest/engineers-gear/issues"
 license="MIT"
 
 [[mods]]
